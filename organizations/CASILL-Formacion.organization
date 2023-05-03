@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="CASILL-Formacion">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="RafaelGonzalez">
+      <firstName>Rafael</firstName>
+      <lastName>González</lastName>
+      <title>Sr</title>
+      <jobTitle>Jefe</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="MariaRuiz">
+      <firstName>María</firstName>
+      <lastName>Ruiz</lastName>
+      <title>Sra</title>
+      <jobTitle></jobTitle>
+      <manager>RafaelGonzalez</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="JoseGomez">
+      <firstName>Jose</firstName>
+      <lastName>Gómez</lastName>
+      <manager>MariaRuiz</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="JuanPalomez">
+      <firstName>Juan</firstName>
+      <lastName>Palómez</lastName>
+      <title>Sr</title>
+      <jobTitle>Maestra</jobTitle>
+      <manager>LuisaOrtiz</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="LuisaOrtiz">
+      <firstName>Luisa</firstName>
+      <lastName>Ortiz</lastName>
+      <title>Sra</title>
+      <jobTitle></jobTitle>
+      <manager>RafaelGonzalez</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="PabloPerez">
+      <firstName>Pablo</firstName>
+      <lastName>Perez</lastName>
+      <title>Sre</title>
+      <manager>MariaRuiz</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Jefe">
+      <displayName>Jefe</displayName>
+    </role>
+    <role name="InstructorBasico">
+      <displayName>Instructor Básico</displayName>
+      <description>Da cursos a personas que no están aún en la empresa</description>
+    </role>
+    <role name="Empleado">
+      <displayName>Empleado</displayName>
+      <description></description>
+    </role>
+    <role name="EnPracticas">
+      <displayName>En Prácticas</displayName>
+    </role>
+    <role name="InstructorAvanzado">
+      <displayName>Instructor Avanzado</displayName>
+      <description>Imparte cursos a empleados</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="Instructores">
+      <displayName>Instructores</displayName>
+      <description>Quien imparten los cursos</description>
+    </group>
+    <group name="Estudiantes">
+      <displayName>Estudiantes</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>RafaelGonzalez</userName>
+      <roleName>Jefe</roleName>
+      <groupName>Instructores</groupName>
+    </membership>
+    <membership>
+      <userName>Instructor1</userName>
+      <roleName>InstructorAvanzado</roleName>
+      <groupName>Instructores</groupName>
+    </membership>
+    <membership>
+      <userName>JoseGomez</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Estudiantes</groupName>
+    </membership>
+    <membership>
+      <userName>JuanPalomez</userName>
+      <roleName>EnPracticas</roleName>
+      <groupName>Estudiantes</groupName>
+    </membership>
+    <membership>
+      <userName>LuisaOrtiz</userName>
+      <roleName>InstructorBasico</roleName>
+      <groupName>Instructores</groupName>
+    </membership>
+    <membership>
+      <userName>PabloPerez</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Estudiantes</groupName>
+    </membership>
+    <membership>
+      <userName>MariaRuiz</userName>
+      <roleName>InstructorAvanzado</roleName>
+      <groupName>Instructores</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

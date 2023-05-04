@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_-oplQOpfEe2H5Oz9hXxydQ" name="Casill_Inscribirse" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_-oplQepfEe2H5Oz9hXxydQ" name="Inscribirse1">
       <elements xmi:type="process:Lane" xmi:id="_OVIsQOpgEe2H5Oz9hXxydQ" name="Jefe" actor="_wOcwQOqFEe2j6r3wFaGXqg">
@@ -55,6 +55,13 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_nMTkuOphEe2H5Oz9hXxydQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="com.es.sieFormacion.Curso" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_nMTkt-phEe2H5Oz9hXxydQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_Js0OwOqLEe2j6r3wFaGXqg" name="Profesores" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Js0OweqLEe2j6r3wFaGXqg" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Js0OwuqLEe2j6r3wFaGXqg" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_Js0Ow-qLEe2j6r3wFaGXqg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_-oplQupfEe2H5Oz9hXxydQ" name="Empleados" actor="_DOvU4OqHEe2j6r3wFaGXqg">
         <elements xmi:type="process:ServiceTask" xmi:id="_GzEsYOqJEe2j6r3wFaGXqg" name="Inscribirse" outgoing="_LLNKQOqJEe2j6r3wFaGXqg" incoming="_I2mDUOqJEe2j6r3wFaGXqg">

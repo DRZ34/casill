@@ -205,10 +205,12 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_PCqKseqOEe2W7IZ7vkAZSw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_bvEL4OqOEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_bvEL4eqOEe2W7IZ7vkAZSw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_J74r5OqTEe2W7IZ7vkAZSw" name="initCurso()" content="def cursoVar = new com.es.sieFormacion.Curso()&#xA;cursoVar.nombre = cursoInput?.nombre&#xA;cursoVar.etiqueta = cursoInput?.etiqueta&#xA;cursoVar.tipo = cursoInput?.tipo&#xA;cursoVar.precio = cursoInput?.precio?.toFloat()&#xA;cursoVar.fecha_inicio = cursoInput?.fecha_inicio&#xA;cursoVar.descripcion = cursoInput?.descripcion&#xA;cursoVar.instructor = cursoInput?.instructor&#xA;return cursoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.es.sieFormacion.Curso">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_J74r5eqTEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX"/>
+        </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_-oplVOpfEe2H5Oz9hXxydQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_-oplVepfEe2H5Oz9hXxydQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_E_ki4OqTEe2W7IZ7vkAZSw" name="crearCurso" content="69129342-2656-4db9-af18-cc6b8372b899" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_-oplVupfEe2H5Oz9hXxydQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_-oplV-pfEe2H5Oz9hXxydQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -244,7 +246,29 @@
       <actors xmi:type="process:Actor" xmi:id="_wOcwQOqFEe2j6r3wFaGXqg" name="MJIglesias"/>
       <actors xmi:type="process:Actor" xmi:id="_mzmJ8OqGEe2j6r3wFaGXqg" name="Profesores" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_DOvU4OqHEe2j6r3wFaGXqg" name="Empleados"/>
-      <contract xmi:type="process:Contract" xmi:id="_-oplXOpfEe2H5Oz9hXxydQ"/>
+      <contract xmi:type="process:Contract" xmi:id="_-oplXOpfEe2H5Oz9hXxydQ">
+        <inputs xmi:type="process:ContractInput" xmi:id="_J74E0OqTEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" dataReference="curso">
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E0eqTEe2W7IZ7vkAZSw" name="nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E0uqTEe2W7IZ7vkAZSw" name="etiqueta" multiple="true"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E0-qTEe2W7IZ7vkAZSw" name="tipo"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E1OqTEe2W7IZ7vkAZSw" name="precio" type="DECIMAL"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E1eqTEe2W7IZ7vkAZSw" name="fecha_inicio" type="LOCALDATE"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E1uqTEe2W7IZ7vkAZSw" name="descripcion"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J74E1-qTEe2W7IZ7vkAZSw" name="instructor"/>
+        </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_J74r4OqTEe2W7IZ7vkAZSw" expression="cursoInput?.nombre != null" errorMessage="nombre is mandatory for Curso" name="mandatory_cursoInput_nombre">
+          <inputNames>cursoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_J74r4eqTEe2W7IZ7vkAZSw" expression="cursoInput?.precio != null" errorMessage="precio is mandatory for Curso" name="mandatory_cursoInput_precio">
+          <inputNames>cursoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_J74r4uqTEe2W7IZ7vkAZSw" expression="cursoInput?.fecha_inicio != null" errorMessage="fecha_inicio is mandatory for Curso" name="mandatory_cursoInput_fecha_inicio">
+          <inputNames>cursoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_J74r4-qTEe2W7IZ7vkAZSw" expression="cursoInput?.instructor != null" errorMessage="instructor is mandatory for Curso" name="mandatory_cursoInput_instructor">
+          <inputNames>cursoInput</inputNames>
+        </constraints>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_-oplXepfEe2H5Oz9hXxydQ">
         <name xmi:type="expression:Expression" xmi:id="_-oplXupfEe2H5Oz9hXxydQ" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_-oplX-pfEe2H5Oz9hXxydQ" content="" returnTypeFixed="true"/>

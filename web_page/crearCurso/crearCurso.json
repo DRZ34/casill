@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "crearCurso",
   "name" : "crearCurso",
-  "lastUpdate" : 1683215006245,
+  "lastUpdate" : 1683215406571,
   "rows" : [
     [
       {
@@ -892,7 +892,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "{{userJava.user_name}}"
+                          "value" : "curso.instructor"
                         },
                         "required" : {
                           "type" : "constant",

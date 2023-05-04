@@ -7,15 +7,136 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_-oplSOpfEe2H5Oz9hXxydQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_-oplSepfEe2H5Oz9hXxydQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_-oplSupfEe2H5Oz9hXxydQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_V3jl8OqOEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_V3jl8eqOEe2W7IZ7vkAZSw" name="cursoEntrada" content="cursoEntrada" type="TYPE_VARIABLE" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_V3jl8uqOEe2W7IZ7vkAZSw" name="cursoEntrada" multiple="true" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_V3jl8-qOEe2W7IZ7vkAZSw" name="cursoEntradaInput" content="def cursoList = []&#xA;//For each item collected in multiple input&#xA;     .each{&#xA;&#x9;//Add Curso instance&#xA;&#x9;cursoList.add({ currentCursoInput ->&#xA;&#x9;&#x9;def cursoVar = cursoEntrada.find { it.persistenceId.toString() == currentCursoInput.persistenceId_string} ?: new com.es.sieFormacion.Curso()&#xA;&#x9;&#x9;cursoVar.nombre = currentCursoInput.nombre&#xA;&#x9;&#x9;cursoVar.etiqueta = currentCursoInput.etiqueta&#xA;&#x9;&#x9;cursoVar.tipo = currentCursoInput.tipo&#xA;&#x9;&#x9;cursoVar.precio = currentCursoInput.precio?.toFloat()&#xA;&#x9;&#x9;cursoVar.fecha_inicio = currentCursoInput.fecha_inicio&#xA;&#x9;&#x9;cursoVar.descripcion = currentCursoInput.descripcion&#xA;&#x9;&#x9;cursoVar.instructor = currentCursoInput.instructor&#xA;&#x9;&#x9;return cursoVar&#xA;&#x9;}(it))&#xA;}&#xA;return cursoList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_V3jl9eqOEe2W7IZ7vkAZSw" name="cursoEntrada" multiple="true" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_V3jl9uqOEe2W7IZ7vkAZSw" type="ASSIGNMENT" expression="addAll">
+              <inputTypes>java.util.Collection</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_TGORVOqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_TGORVeqPEe2W7IZ7vkAZSw" name="cursoEntrada" content="cursoEntrada" type="TYPE_VARIABLE" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TGORVuqPEe2W7IZ7vkAZSw" name="cursoEntrada" multiple="true" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_TGORV-qPEe2W7IZ7vkAZSw" name="cursoEntradaInput" content="def cursoList = []&#xA;//For each item collected in multiple input&#xA;     .each{&#xA;&#x9;//Add Curso instance&#xA;&#x9;cursoList.add({ currentCursoInput ->&#xA;&#x9;&#x9;def cursoVar = cursoEntrada.find { it.persistenceId.toString() == currentCursoInput.persistenceId_string} ?: new com.es.sieFormacion.Curso()&#xA;&#x9;&#x9;cursoVar.nombre = currentCursoInput.nombre&#xA;&#x9;&#x9;cursoVar.etiqueta = currentCursoInput.etiqueta&#xA;&#x9;&#x9;cursoVar.tipo = currentCursoInput.tipo&#xA;&#x9;&#x9;cursoVar.precio = currentCursoInput.precio?.toFloat()&#xA;&#x9;&#x9;cursoVar.fecha_inicio = currentCursoInput.fecha_inicio&#xA;&#x9;&#x9;cursoVar.descripcion = currentCursoInput.descripcion&#xA;&#x9;&#x9;cursoVar.instructor = currentCursoInput.instructor&#xA;&#x9;&#x9;return cursoVar&#xA;&#x9;}(it))&#xA;}&#xA;return cursoList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TGORWeqPEe2W7IZ7vkAZSw" name="cursoEntrada" multiple="true" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_TGORWuqPEe2W7IZ7vkAZSw" type="ASSIGNMENT" expression="addAll">
+              <inputTypes>java.util.Collection</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6I-DOqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6I-DeqPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6I-DuqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6I-D-qPEe2W7IZ7vkAZSw" name="cursoInput.nombre" content="cursoInput?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6I-EOqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6I-EeqPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setNombre">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6I-EuqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6I-E-qPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6I-FOqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6I-FeqPEe2W7IZ7vkAZSw" name="cursoInput.etiqueta" content="cursoInput?.etiqueta" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6I-FuqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6I-F-qPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setEtiqueta">
+              <inputTypes>java.util.List</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6I-GOqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6I-GeqPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6I-GuqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6I-G-qPEe2W7IZ7vkAZSw" name="cursoInput.tipo" content="cursoInput?.tipo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6JlEOqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6JlEeqPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setTipo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6JlEuqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6JlE-qPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6JlFOqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6JlFeqPEe2W7IZ7vkAZSw" name="cursoInput.precio" content="cursoInput?.precio?.toFloat()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Float">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6JlFuqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6JlF-qPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setPrecio">
+              <inputTypes>java.lang.Float</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6JlGOqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6JlGeqPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6JlGuqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6JlG-qPEe2W7IZ7vkAZSw" name="cursoInput.fecha_inicio" content="cursoInput?.fecha_inicio" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6JlHOqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6JlHeqPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setFecha_inicio">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6JlHuqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6JlH-qPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6JlIOqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6JlIeqPEe2W7IZ7vkAZSw" name="cursoInput.descripcion" content="cursoInput?.descripcion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6JlIuqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6JlI-qPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setDescripcion">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_b6JlJOqPEe2W7IZ7vkAZSw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_b6JlJeqPEe2W7IZ7vkAZSw" name="curso" content="curso" type="TYPE_VARIABLE" returnType="com.es.sieFormacion.Curso">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b6JlJuqPEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_b6JlJ-qPEe2W7IZ7vkAZSw" name="cursoInput.instructor" content="cursoInput?.instructor" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_b6JlKOqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_b6JlKeqPEe2W7IZ7vkAZSw" type="JAVA_METHOD" expression="setInstructor">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_-oplS-pfEe2H5Oz9hXxydQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_-oplTOpfEe2H5Oz9hXxydQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_-oplTepfEe2H5Oz9hXxydQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_-oplTupfEe2H5Oz9hXxydQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_-oplT-pfEe2H5Oz9hXxydQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_-oplUOpfEe2H5Oz9hXxydQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_-oplUepfEe2H5Oz9hXxydQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_qEgncOqOEe2W7IZ7vkAZSw" name="crearCurso" content="69129342-2656-4db9-af18-cc6b8372b899" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_-oplUupfEe2H5Oz9hXxydQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_-oplUupfEe2H5Oz9hXxydQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_b6I-AOqPEe2W7IZ7vkAZSw" name="cursoInput" type="COMPLEX" dataReference="curso" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-AeqPEe2W7IZ7vkAZSw" name="nombre" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-AuqPEe2W7IZ7vkAZSw" name="etiqueta" multiple="true" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-A-qPEe2W7IZ7vkAZSw" name="tipo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-BOqPEe2W7IZ7vkAZSw" name="precio" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-BeqPEe2W7IZ7vkAZSw" name="fecha_inicio" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-BuqPEe2W7IZ7vkAZSw" name="descripcion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_b6I-B-qPEe2W7IZ7vkAZSw" name="instructor" createMode="false"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_b6I-COqPEe2W7IZ7vkAZSw" expression="cursoInput?.nombre != null" errorMessage="nombre is mandatory for Curso" name="mandatory_cursoInput_nombre">
+              <inputNames>cursoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_b6I-CeqPEe2W7IZ7vkAZSw" expression="cursoInput?.precio != null" errorMessage="precio is mandatory for Curso" name="mandatory_cursoInput_precio">
+              <inputNames>cursoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_b6I-CuqPEe2W7IZ7vkAZSw" expression="cursoInput?.fecha_inicio != null" errorMessage="fecha_inicio is mandatory for Curso" name="mandatory_cursoInput_fecha_inicio">
+              <inputNames>cursoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_b6I-C-qPEe2W7IZ7vkAZSw" expression="cursoInput?.instructor != null" errorMessage="instructor is mandatory for Curso" name="mandatory_cursoInput_instructor">
+              <inputNames>cursoInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_-oplU-pfEe2H5Oz9hXxydQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -80,6 +201,12 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_KCvtY-qJEe2j6r3wFaGXqg" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_PCqKsOqOEe2W7IZ7vkAZSw" name="cursoEntrada" multiple="true" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_PCqKseqOEe2W7IZ7vkAZSw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_bvEL4OqOEe2W7IZ7vkAZSw" name="curso" dataType="_-opldOpfEe2H5Oz9hXxydQ" className="com.es.sieFormacion.Curso">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_bvEL4eqOEe2W7IZ7vkAZSw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_-oplVOpfEe2H5Oz9hXxydQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_-oplVepfEe2H5Oz9hXxydQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>

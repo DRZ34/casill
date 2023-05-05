@@ -40,5 +40,21 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.es.sieFormacion.SolicitudCurso">
+            <fields>
+                <field type="LONG" length="255" name="solicitanteId" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="etiqueta" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="tipo" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="precio" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaInicio" nullable="false" collection="false"/>
+                <field type="TEXT" length="255" name="descripcion" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="instructor" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aprobado" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>

@@ -7,7 +7,9 @@
       <lastName>Iglesias</lastName>
       <title>Sr</title>
       <jobTitle>Jefe</jobTitle>
-      <personalData/>
+      <personalData>
+        <email>mjiglesias@casill.com</email>
+      </personalData>
       <professionalData>
         <email>mjiglesias@casill.com</email>
       </professionalData>
@@ -20,7 +22,9 @@
       <title>Sra</title>
       <jobTitle></jobTitle>
       <manager>MJIglesias</manager>
-      <personalData/>
+      <personalData>
+        <email>mariaruiz@casill.com</email>
+      </personalData>
       <professionalData>
         <email>mariaruiz@casill.com</email>
       </professionalData>
@@ -31,7 +35,9 @@
       <firstName>Jose</firstName>
       <lastName>Gómez</lastName>
       <manager>MariaRuiz</manager>
-      <personalData/>
+      <personalData>
+        <email>josegomez@casill.com</email>
+      </personalData>
       <professionalData>
         <email>josegomez@casill.com</email>
       </professionalData>
@@ -44,7 +50,9 @@
       <title>Sr</title>
       <jobTitle>Maestra</jobTitle>
       <manager>LuisaOrtiz</manager>
-      <personalData/>
+      <personalData>
+        <email>juanpalomez@casill.com</email>
+      </personalData>
       <professionalData>
         <email>juanpalomez@casill.com</email>
       </professionalData>
@@ -57,7 +65,9 @@
       <title>Sra</title>
       <jobTitle></jobTitle>
       <manager>MJIglesias</manager>
-      <personalData/>
+      <personalData>
+        <email>luisaortiz@casill.com</email>
+      </personalData>
       <professionalData>
         <email>luisaortiz@casill.com</email>
       </professionalData>
@@ -69,7 +79,9 @@
       <lastName>Perez</lastName>
       <title>Sre</title>
       <manager>MariaRuiz</manager>
-      <personalData/>
+      <personalData>
+        <email>pabloperez@casill.com</email>
+      </personalData>
       <professionalData>
         <email>pabloperez@casill.com</email>
       </professionalData>

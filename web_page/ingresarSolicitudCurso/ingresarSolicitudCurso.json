@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "ingresarSolicitudCurso",
   "name" : "ingresarSolicitudCurso",
-  "lastUpdate" : 1683321914280,
+  "lastUpdate" : 1683365803284,
   "rows" : [
     [
       {
@@ -586,29 +586,33 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "expression",
-                          "value" : "dd/MM/yyyy"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
+                        "hidden" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
                         "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -616,50 +620,38 @@
                           "type" : "interpolation",
                           "value" : "Fecha Inicio"
                         },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "placeholder" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "Ingrese una fecha (dd/mm/yyyy)"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                          "value" : 1
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.solicitudInput.fechaInicio"
                         },
-                        "allowHTML" : {
+                        "dateFormat" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : "dd/MM/yyyy"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Ingrese una fecha (dd/mm/yyyy)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
                         }
                       },
-                      "reference" : "df9c8928-3fa5-42f5-a75c-2a28d7cfe287",
+                      "reference" : "dde26433-2be0-49cf-be78-9c07a0bfaecd",
                       "hasValidationError" : false,
-                      "id" : "pbDatePicker",
-                      "description" : ""
+                      "id" : "pbDatePicker"
                     }
                   ],
                   [
@@ -718,6 +710,28 @@
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "b733cdfe-43a5-4c86-8fe0-d73e53b5b771",

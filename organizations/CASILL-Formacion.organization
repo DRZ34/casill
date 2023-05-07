@@ -116,6 +116,7 @@
     </group>
     <group name="Empleados">
       <displayName>Empleados</displayName>
+      <description></description>
     </group>
   </groups>
   <memberships>

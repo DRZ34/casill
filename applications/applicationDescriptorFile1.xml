@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="pedido-material" version="1.0" profile="User" homePage="pedido-material" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Realizar Pedido de Materiales</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_PedidoMateriales" token="pedido-material"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="pedido-material">
+                <displayName>Realizar Pedido de Materiales</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

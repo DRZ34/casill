@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "Inscripciones",
-  "name" : "Inscripciones",
-  "lastUpdate" : 1683457176822,
+  "id" : "CrearCurso1",
+  "name" : "CrearCurso",
+  "lastUpdate" : 1683642189433,
   "rows" : [
     [
       {
@@ -28,7 +28,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Inscripciones Curso"
+            "value" : "Gestión de Cursos"
           },
           "level" : {
             "type" : "constant",
@@ -39,9 +39,84 @@
             "value" : "center"
           }
         },
-        "reference" : "b42e8fb0-893a-4065-af70-2eb911a5bc2a",
+        "reference" : "580fa562-268b-4b12-a092-fee53fccc371",
         "hasValidationError" : false,
         "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Crear Curso"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "process"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "constant"
+          },
+          "processName" : {
+            "type" : "constant",
+            "value" : "Pool"
+          },
+          "processVersion" : {
+            "type" : "constant",
+            "value" : "1.0"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          }
+        },
+        "reference" : "97110513-71c5-455a-9a17-234bb6063264",
+        "hasValidationError" : false,
+        "id" : "pbLink"
       }
     ],
     [
@@ -70,106 +145,19 @@
             "value" : 12
           }
         },
-        "reference" : "8a99a73f-02fe-4ad4-a4f3-70f66ca4dda8",
+        "reference" : "5ba6c2c6-4f8f-4136-8522-e51293574e44",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "description" : "Auto generate ui for business object \"com.es.sieFormacion.SolicitudCurso\"",
         "rows" : [
           [
             {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "Crear un nuevo curso"
-                },
-                "type" : {
-                  "type" : "constant",
-                  "value" : "process"
-                },
-                "targetUrl" : {
-                  "type" : "constant",
-                  "value" : "http://localhost:8080/bonita/apps/userAppBonita/process-list/"
-                },
-                "pageToken" : {
-                  "type" : "constant"
-                },
-                "processName" : {
-                  "type" : "constant",
-                  "value" : "AgregaCurso"
-                },
-                "processVersion" : {
-                  "type" : "constant",
-                  "value" : "1.0.0"
-                },
-                "taskId" : {
-                  "type" : "constant"
-                },
-                "caseId" : {
-                  "type" : "constant"
-                },
-                "target" : {
-                  "type" : "constant",
-                  "value" : "_self"
-                },
-                "appToken" : {
-                  "type" : "constant"
-                },
-                "urlParams" : {
-                  "type" : "constant"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "buttonStyle" : {
-                  "type" : "constant",
-                  "value" : "primary"
-                }
-              },
-              "reference" : "459b8dfb-ce12-4308-b3fd-26ae3c0d6b23",
-              "hasValidationError" : false,
-              "id" : "pbLink"
-            }
-          ],
-          [
-            {
               "type" : "container",
               "dimension" : {
                 "xs" : 12
               },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "repeatedCollection" : {
-                  "type" : "variable"
-                }
-              },
-              "reference" : "941639a9-a84f-4169-b75a-308e48780434",
+              "propertyValues" : { },
+              "reference" : "48228c03-bb79-4592-ab9c-80a13d7cc93a",
               "hasValidationError" : false,
               "id" : "pbContainer",
               "description" : "\"com.es.sieFormacion.SolicitudCurso\" object from \"solicitudCurso\" variable",
@@ -198,11 +186,11 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "Inscripciones"
+                        "value" : "Cursos Disponibles"
                       },
                       "alignment" : {
                         "type" : "constant",
-                        "value" : "center"
+                        "value" : "left"
                       },
                       "dimension" : {
                         "type" : "constant",
@@ -213,7 +201,7 @@
                         "value" : false
                       }
                     },
-                    "reference" : "9142934d-8672-4996-84ae-c8d2ca442e93",
+                    "reference" : "26646cce-45e9-43bf-86c8-796fc9517faf",
                     "hasValidationError" : false,
                     "id" : "pbTitle",
                     "description" : ""
@@ -235,7 +223,7 @@
                           "Nombre",
                           "Tipo",
                           "Precio",
-                          "Fecha de Inicio",
+                          "Fecha Inicio",
                           "Descripcion",
                           "Instructor"
                         ]
@@ -272,8 +260,7 @@
                           "precio",
                           "fechaInicio",
                           "descripcion",
-                          "instructor",
-                          "aprobado"
+                          "instructor"
                         ]
                       },
                       "dimension" : {
@@ -297,7 +284,7 @@
                         "value" : true
                       }
                     },
-                    "reference" : "3e9d4407-91ee-4fe1-9603-5a9ff75123b6",
+                    "reference" : "9a798130-e6f2-41e2-8f54-52b9f4597446",
                     "hasValidationError" : false,
                     "id" : "pbTable",
                     "description" : ""
@@ -329,7 +316,7 @@
                         "value" : 1
                       }
                     },
-                    "reference" : "17b20455-89a8-4810-b341-1cfb3200318a",
+                    "reference" : "510e0618-5df8-488e-81e4-9ec613bd1635",
                     "hasValidationError" : false,
                     "id" : "pbContainer",
                     "rows" : [
@@ -361,7 +348,7 @@
                         "value" : 11
                       }
                     },
-                    "reference" : "7848405c-e42a-4cfe-b611-746c7bda25d1",
+                    "reference" : "72c27455-228a-4dc4-a6f2-4f08e3bc523b",
                     "hasValidationError" : false,
                     "id" : "pbContainer",
                     "description" : "Display \"SolicitudCurso\" details when a line is selected in the table above",
@@ -422,31 +409,9 @@
                             "required" : {
                               "type" : "constant",
                               "value" : true
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "minLength" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "maxLength" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "min" : {
-                              "type" : "constant"
-                            },
-                            "max" : {
-                              "type" : "constant"
-                            },
-                            "step" : {
-                              "type" : "constant",
-                              "value" : 1
                             }
                           },
-                          "reference" : "00fee91e-7571-40c3-9b02-4fac6f3e67ff",
+                          "reference" : "ef81c671-6b98-4a3d-84d6-3b2a87e3c4db",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -487,7 +452,7 @@
                               "value" : 12
                             }
                           },
-                          "reference" : "d955ea0d-0276-44c1-81a8-1da9b74877a7",
+                          "reference" : "71f64fd0-c183-4dde-90ed-de7624843ec8",
                           "hasValidationError" : false,
                           "id" : "pbTitle",
                           "description" : ""
@@ -518,7 +483,7 @@
                               "value" : 12
                             }
                           },
-                          "reference" : "c3303d60-0294-4a84-9f70-def5ca17fbe7",
+                          "reference" : "fb0d0499-b7eb-4971-a301-6d5c6c5bd5cb",
                           "hasValidationError" : false,
                           "id" : "pbContainer",
                           "description" : "List all attributes \"Etiqueta\" for Business Object \"com.es.sieFormacion.SolicitudCurso\"",
@@ -579,31 +544,9 @@
                                   "required" : {
                                     "type" : "constant",
                                     "value" : true
-                                  },
-                                  "allowHTML" : {
-                                    "type" : "constant",
-                                    "value" : false
-                                  },
-                                  "minLength" : {
-                                    "type" : "constant",
-                                    "value" : ""
-                                  },
-                                  "maxLength" : {
-                                    "type" : "constant",
-                                    "value" : ""
-                                  },
-                                  "min" : {
-                                    "type" : "constant"
-                                  },
-                                  "max" : {
-                                    "type" : "constant"
-                                  },
-                                  "step" : {
-                                    "type" : "constant",
-                                    "value" : 1
                                   }
                                 },
-                                "reference" : "0824df87-8d30-4ed3-a0d9-f89ddb0c8f60",
+                                "reference" : "fba81fac-0c91-4f4e-ad1c-ad0603cb3180",
                                 "hasValidationError" : false,
                                 "id" : "pbInput",
                                 "description" : ""
@@ -670,7 +613,7 @@
                               "value" : true
                             }
                           },
-                          "reference" : "185ad362-3e38-4362-94bf-5f12e143ba08",
+                          "reference" : "69029925-4448-4f5a-a072-cbf50c48560e",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -732,31 +675,9 @@
                             "required" : {
                               "type" : "constant",
                               "value" : true
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "minLength" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "maxLength" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "min" : {
-                              "type" : "constant"
-                            },
-                            "max" : {
-                              "type" : "constant"
-                            },
-                            "step" : {
-                              "type" : "constant",
-                              "value" : 1
                             }
                           },
-                          "reference" : "0d64f5fc-91ca-4488-aa53-c62e7eb9c741",
+                          "reference" : "0676f008-c70e-47cf-acad-cb6a50f6a4ee",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -778,7 +699,7 @@
                             },
                             "dateFormat" : {
                               "type" : "constant",
-                              "value" : "dd/MM/yyyy"
+                              "value" : "MM/dd/yyyy"
                             },
                             "cssClasses" : {
                               "type" : "constant",
@@ -794,7 +715,7 @@
                             },
                             "label" : {
                               "type" : "interpolation",
-                              "value" : "Fecha de Inicio"
+                              "value" : "Fecha Inicio"
                             },
                             "type" : {
                               "type" : "constant"
@@ -813,7 +734,7 @@
                             },
                             "showToday" : {
                               "type" : "constant",
-                              "value" : false
+                              "value" : true
                             },
                             "labelPosition" : {
                               "type" : "constant",
@@ -821,7 +742,7 @@
                             },
                             "placeholder" : {
                               "type" : "constant",
-                              "value" : "dd/mm/yyyy"
+                              "value" : "Enter a date (mm/dd/yyyy)"
                             },
                             "dimension" : {
                               "type" : "constant",
@@ -830,13 +751,9 @@
                             "value" : {
                               "type" : "variable",
                               "value" : "solicitudCurso_selected.fechaInicio"
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : false
                             }
                           },
-                          "reference" : "e59a86b5-bd5d-40e0-96cb-168098305403",
+                          "reference" : "f647aa04-57ce-4e08-af1c-7158da0b3280",
                           "hasValidationError" : false,
                           "id" : "pbDatePicker",
                           "description" : ""
@@ -900,7 +817,7 @@
                               "value" : true
                             }
                           },
-                          "reference" : "4f1f6186-7400-4565-a709-62da2bf7bc74",
+                          "reference" : "34516d18-b7e3-4359-99de-ff0793276e72",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -964,7 +881,7 @@
                               "value" : true
                             }
                           },
-                          "reference" : "c9794e61-1cfe-4f32-a7fd-7c6ab75456ce",
+                          "reference" : "8399bb33-05b1-4438-9ee0-977db5d0bc20",
                           "hasValidationError" : false,
                           "id" : "pbInput",
                           "description" : ""
@@ -982,16 +899,16 @@
   ],
   "assets" : [
     {
-      "id" : "49934fb6-e528-4fcc-a73c-de1d2ad78fe3",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "14ac68b9-def0-4b5a-a6da-85573fa7a59b",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "902a4f1f-0c83-4341-b081-c88a684e72f2",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "3ad6f418-748f-4476-9f23-9d0f6034da29",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
@@ -1001,7 +918,7 @@
     "solicitudCurso" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"findBySolicitanteId [com.es.sieFormacion.SolicitudCurso]\",\"businessObjectName\":\"SolicitudCurso\",\"query\":{\"name\":\"findBySolicitanteId\",\"displayName\":\"findBySolicitanteId\"},\"id\":\"com.es.sieFormacion.SolicitudCurso\",\"filters\":[{\"name\":\"solicitanteId\",\"type\":\"LONG\",\"collection\":false,\"value\":\"0\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"findByAprobado [com.es.sieFormacion.SolicitudCurso]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findByAprobado\",\"displayName\":\"findByAprobado\"},\"id\":\"com.es.sieFormacion.SolicitudCurso\",\"filters\":[{\"name\":\"aprobado\",\"type\":\"BOOLEAN\",\"collection\":false,\"value\":\"true\"}],\"pagination\":{\"p\":\"0\",\"c\":\"50\"}}"
       ],
       "exposed" : false
     },
@@ -1014,7 +931,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "f0c6c9d5-22bf-4312-b5d5-98f29d0ea5a0",
+  "uuid" : "bf059036-a243-45e9-b7cc-17b25b3e5ba6",
   "type" : "page",
   "description" : "Page generated with Bonita UI designer"
 }

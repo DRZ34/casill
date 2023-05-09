@@ -105,11 +105,6 @@
     </dependency>
     <dependency>
       <groupId>org.bonitasoft.actorfilter</groupId>
-      <artifactId>bonita-actorfilter-initiator-manager</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.bonitasoft.actorfilter</groupId>
       <artifactId>bonita-actorfilter-same-task-user</artifactId>
       <version>1.0.0</version>
     </dependency>
@@ -133,6 +128,11 @@
       <artifactId>bdm-client</artifactId>
       <version>1.0.0</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-initiator-manager</artifactId>
+      <version>1.0.0</version>
     </dependency>
   </dependencies>
   <build>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "validarSolicitudCurso",
   "name" : "validarSolicitudCurso",
-  "lastUpdate" : 1683363683227,
+  "lastUpdate" : 1683647063716,
   "rows" : [
     [
       {
@@ -636,7 +636,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{solicitante.nombre}}\n{{solicitante.apellidos}}"
+                          "value" : "{{solicitud.instructor}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -700,7 +700,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "right"
+                    "value" : "left"
                   },
                   "buttonStyle" : {
                     "type" : "constant",
@@ -899,6 +899,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "69e33872-44c4-4d65-b11a-fffcf582c4f0",

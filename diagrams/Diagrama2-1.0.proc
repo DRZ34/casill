@@ -36,7 +36,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_V0EhP-0MEe2oLYWrVPyduw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_V0EhQO0MEe2oLYWrVPyduw" key="from">
-                <expression xmi:type="expression:Expression" xmi:id="_V0EhQe0MEe2oLYWrVPyduw" name="from()" content="'mariaruiz@casill.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_V0EhQe0MEe2oLYWrVPyduw" name="from()" content="import java.util.logging.Logger;&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;)&#xD;&#xA;def jefe_id = apiAccessor.getIdentityAPI().getRoleByName(&quot;InstructorAvanzado&quot;).id&#xD;&#xA;def user = apiAccessor.getIdentityAPI().getUsersInRole(jefe_id, 0, 100, org.bonitasoft.engine.identity.UserCriterion.FIRST_NAME_ASC)&#xD;&#xA;logger.severe(&quot;hola&quot;+user)&#xD;&#xA;List&lt;String> lista = []&#xD;&#xA;for(u in user){&#xD;&#xA;&#x9;def personalContactData = apiAccessor.getIdentityAPI().getUserContactData(u.id, true).email&#xD;&#xA;&#x9;lista.add(personalContactData)&#xD;&#xA;}&#xD;&#xA;return lista[0]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_fmLLoPAFEe2-ueeTIcm9qw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_V0EhQu0MEe2oLYWrVPyduw" key="returnPath">
                 <expression xmi:type="expression:Expression" xmi:id="_V0EhQ-0MEe2oLYWrVPyduw" content="" returnTypeFixed="true"/>
@@ -120,7 +122,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_uajuz-0MEe2oLYWrVPyduw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_uaju0O0MEe2oLYWrVPyduw" key="from">
-                <expression xmi:type="expression:Expression" xmi:id="_uaju0e0MEe2oLYWrVPyduw" name="from()" content="'mjiglesias@casill.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_uaju0e0MEe2oLYWrVPyduw" name="from()" content="import java.util.logging.Logger;&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;)&#xD;&#xA;def jefe_id = apiAccessor.getIdentityAPI().getRoleByName(&quot;jefe&quot;).id&#xD;&#xA;def user = apiAccessor.getIdentityAPI().getUsersInRole(jefe_id, 0, 100, org.bonitasoft.engine.identity.UserCriterion.FIRST_NAME_ASC)&#xD;&#xA;logger.severe(&quot;hola&quot;+user)&#xD;&#xA;List&lt;String> lista = []&#xD;&#xA;for(u in user){&#xD;&#xA;&#x9;def personalContactData = apiAccessor.getIdentityAPI().getUserContactData(u.id, true).email&#xD;&#xA;&#x9;lista.add(personalContactData)&#xD;&#xA;}&#xD;&#xA;return lista[0]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_h77iEPAFEe2-ueeTIcm9qw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_uaju0u0MEe2oLYWrVPyduw" key="returnPath">
                 <expression xmi:type="expression:Expression" xmi:id="_uaju0-0MEe2oLYWrVPyduw" content="" returnTypeFixed="true"/>
@@ -243,7 +247,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_0Jkew-56Ee2PIrJQrtmQaA" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_0JkexO56Ee2PIrJQrtmQaA" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_0Jkexe56Ee2PIrJQrtmQaA" name="to()" content="'mariaruiz@casill.com'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_0Jkexe56Ee2PIrJQrtmQaA" name="to()" content="import java.util.logging.Logger;&#xD;&#xA;Logger logger = Logger.getLogger(&quot;org.bonitasoft&quot;)&#xD;&#xA;def jefe_id = apiAccessor.getIdentityAPI().getRoleByName(&quot;InstructorAvanzado&quot;).id&#xD;&#xA;def user = apiAccessor.getIdentityAPI().getUsersInRole(jefe_id, 0, 100, org.bonitasoft.engine.identity.UserCriterion.FIRST_NAME_ASC)&#xD;&#xA;logger.severe(&quot;hola&quot;+user)&#xD;&#xA;List&lt;String> lista = []&#xD;&#xA;for(u in user){&#xD;&#xA;&#x9;def personalContactData = apiAccessor.getIdentityAPI().getUserContactData(u.id, true).email&#xD;&#xA;&#x9;lista.add(personalContactData)&#xD;&#xA;}&#xD;&#xA;return lista[0]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_bozXIPAFEe2-ueeTIcm9qw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_0JkeyO56Ee2PIrJQrtmQaA" key="bcc">
                 <expression xmi:type="expression:Expression" xmi:id="_0Jkeye56Ee2PIrJQrtmQaA" content="" returnTypeFixed="true"/>

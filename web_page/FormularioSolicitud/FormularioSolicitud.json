@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "FormularioSolicitud",
   "name" : "FormularioSolicitud",
-  "lastUpdate" : 1683796279790,
+  "lastUpdate" : 1683816293708,
   "rows" : [
     [
       {
@@ -851,7 +851,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Browse to upload a new file..."
+                          "value" : "Sube aquí el archivo"
                         },
                         "dimension" : {
                           "type" : "constant",

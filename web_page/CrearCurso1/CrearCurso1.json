@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "CrearCurso1",
   "name" : "CrearCurso",
-  "lastUpdate" : 1683642189433,
+  "lastUpdate" : 1683816608553,
   "rows" : [
     [
       {
@@ -83,7 +83,7 @@
           },
           "processName" : {
             "type" : "constant",
-            "value" : "Pool"
+            "value" : "Creación Curso"
           },
           "processVersion" : {
             "type" : "constant",

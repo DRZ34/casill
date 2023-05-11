@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
     <businessObjects>
-        <businessObject qualifiedName="com.es.sieFormacion.Curso">
-            <fields>
-                <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="etiqueta" nullable="true" collection="true"/>
-                <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
-                <field type="FLOAT" length="255" name="precio" nullable="false" collection="false"/>
-                <field type="LOCALDATE" length="255" name="fecha_inicio" nullable="false" collection="false"/>
-                <field type="TEXT" length="255" name="descripcion" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="instructor" nullable="false" collection="false"/>
-            </fields>
-            <uniqueConstraints>
-                <uniqueConstraint name="restriccion1">
-                    <fieldNames>
-                        <fieldName>nombre</fieldName>
-                    </fieldNames>
-                </uniqueConstraint>
-            </uniqueConstraints>
-            <queries>
-                <query name="findByNombreInstructor" content="SELECT c &#10;FROM Curso c &#10;WHERE c.nombre = :nombre&#10;AND c.instructor = :instructor&#10;ORDER BY c.persistenceId ASC" returnType="com.es.sieFormacion.Curso">
-                    <description>Devuelve los cursos con un nombre e instructor concretos</description>
-                    <queryParameters>
-                        <queryParameter name="nombre" className="java.lang.String"/>
-                        <queryParameter name="instructor" className="java.lang.String"/>
-                    </queryParameters>
-                </query>
-            </queries>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="com.es.sieFormacion.Documento">
-            <fields>
-                <field type="STRING" length="255" name="id" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="processInstanceId" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="fileName" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="contentMimeType" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="contentStorageId" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
         <businessObject qualifiedName="com.es.sieFormacion.Materiales">
             <fields>
                 <field type="LONG" length="255" name="materialId" nullable="false" collection="false"/>
@@ -49,17 +8,6 @@
                 <field type="INTEGER" length="255" name="unidades" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="hayAlmacen" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="pedidoRealizado" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
-        <businessObject qualifiedName="com.es.sieFormacion.Matricula">
-            <fields>
-                <field type="STRING" length="255" name="alumno" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.es.sieFormacion.Curso" fetchType="LAZY" name="curso" nullable="false" collection="false"/>
-                <field type="LOCALDATE" length="255" name="fecha_matricula" nullable="false" collection="false"/>
-                <field type="FLOAT" length="255" name="nota" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

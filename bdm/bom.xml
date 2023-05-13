@@ -2,6 +2,7 @@
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
     <businessObjects>
         <businessObject qualifiedName="com.es.sieFormacion.Materiales">
+            <description>Solicitud de material necesario y la cantidad que se necesita del mismo.</description>
             <fields>
                 <field type="LONG" length="255" name="materialId" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="nombreMaterial" nullable="false" collection="false"/>
@@ -14,6 +15,7 @@
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.es.sieFormacion.SolicitudCurso">
+            <description>Solicitud para crear un nuevo curso con todos los datos del mismo.</description>
             <fields>
                 <field type="LONG" length="255" name="solicitanteId" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>

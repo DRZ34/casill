@@ -20,7 +20,7 @@
       <firstName>María</firstName>
       <lastName>Ruiz</lastName>
       <title>Sra</title>
-      <jobTitle></jobTitle>
+      <jobTitle>Mozo de Almacén</jobTitle>
       <manager>MJIglesias</manager>
       <personalData>
         <email>mariaruiz@casill.com</email>
@@ -34,6 +34,7 @@
     <user userName="JoseGomez">
       <firstName>Jose</firstName>
       <lastName>Gómez</lastName>
+      <jobTitle>Fontanero</jobTitle>
       <manager>MariaRuiz</manager>
       <personalData>
         <email>josegomez@casill.com</email>
@@ -48,7 +49,7 @@
       <firstName>Juan</firstName>
       <lastName>Palómez</lastName>
       <title>Sr</title>
-      <jobTitle>Maestra</jobTitle>
+      <jobTitle>No definida aún</jobTitle>
       <manager>LuisaOrtiz</manager>
       <personalData>
         <email>juanpalomez@casill.com</email>
@@ -63,7 +64,7 @@
       <firstName>Luisa</firstName>
       <lastName>Ortiz</lastName>
       <title>Sra</title>
-      <jobTitle></jobTitle>
+      <jobTitle>Instructora</jobTitle>
       <manager>MJIglesias</manager>
       <personalData>
         <email>luisaortiz@casill.com</email>
@@ -78,6 +79,7 @@
       <firstName>Pablo</firstName>
       <lastName>Perez</lastName>
       <title>Sre</title>
+      <jobTitle>Albañil</jobTitle>
       <manager>MariaRuiz</manager>
       <personalData>
         <email>pabloperez@casill.com</email>

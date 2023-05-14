@@ -3,7 +3,8 @@
   <process:MainProcess xmi:id="_FCHHYOuBEe26t6NFWNbtcA" name="MiDiagrama" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_FCHHYeuBEe26t6NFWNbtcA" name="Creación Curso">
       <elements xmi:type="process:Lane" xmi:id="_FCHHYuuBEe26t6NFWNbtcA" name="Jefe" actor="_vA9dkOvyEe248OXz2Z0OJg">
-        <elements xmi:type="process:Task" xmi:id="_FCHHZ-uBEe26t6NFWNbtcA" name="Valida Solicitud" outgoing="_R4EtMOuBEe26t6NFWNbtcA" incoming="_onhe4O_aEe2UK930Zeg3uQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_FCHHZ-uBEe26t6NFWNbtcA" documentation="El jefe acepta o rechaza la solicitud" name="Valida Solicitud" outgoing="_R4EtMOuBEe26t6NFWNbtcA" incoming="_onhe4O_aEe2UK930Zeg3uQ" overrideActorsOfTheLane="false">
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_X9FTIPJREe2Bxqk2R5UJFQ" source="_UUPkMPJREe2Bxqk2R5UJFQ"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FCHHaOuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FCHHaeuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FCHHauuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
@@ -127,9 +128,11 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_0e9AMe53Ee2PIrJQrtmQaA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_0e9AM-53Ee2PIrJQrtmQaA" name="" content="" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_UUPkMPJREe2Bxqk2R5UJFQ" text="El jefe acepta o rechaza la solicitud"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_D_6ZMOvyEe248OXz2Z0OJg" name="Profesores" actor="_0wsAgOvyEe248OXz2Z0OJg">
-        <elements xmi:type="process:StartEvent" xmi:id="_FCHHY-uBEe26t6NFWNbtcA" name="Ingresa Solicitud" outgoing="_onhe4O_aEe2UK930Zeg3uQ">
+        <elements xmi:type="process:StartEvent" xmi:id="_FCHHY-uBEe26t6NFWNbtcA" documentation="Se propone un nuevo curso" name="Ingresa Solicitud" outgoing="_onhe4O_aEe2UK930Zeg3uQ">
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_RtAcMPJREe2Bxqk2R5UJFQ" source="_RW0JwPJREe2Bxqk2R5UJFQ"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FCHHZOuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FCHHZeuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FCHHZuuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
@@ -296,9 +299,11 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_om09EeuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_om09E-uBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_RW0JwPJREe2Bxqk2R5UJFQ" text="Se propone un nuevo curso"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_ErGEMOvyEe248OXz2Z0OJg" name="Empleados" actor="_2Y57gOvyEe248OXz2Z0OJg">
-        <elements xmi:type="process:ServiceTask" xmi:id="_pSlP0OuBEe26t6NFWNbtcA" name="Incribirse" outgoing="_p6rKmOuBEe26t6NFWNbtcA" incoming="_pSoTIOuBEe26t6NFWNbtcA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_pSlP0OuBEe26t6NFWNbtcA" documentation="Les llega un mensaje a todos los empleados para que le echen un vistazon al nuevo curso" name="Incribirse" outgoing="_p6rKmOuBEe26t6NFWNbtcA" incoming="_pSoTIOuBEe26t6NFWNbtcA">
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_hTwuoPJREe2Bxqk2R5UJFQ" source="_eih9IPJREe2Bxqk2R5UJFQ"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pSl24euBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pSl24OuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pSl24uuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
@@ -379,6 +384,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_p6rKkeuBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_p6rKk-uBEe26t6NFWNbtcA" name="" content="" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_eih9IPJREe2Bxqk2R5UJFQ" text="Les llega un mensaje a todos los empleados para que le echen un vistazon al nuevo curso"/>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_kpeSgOuIEe26t6NFWNbtcA" name="solicitud" dataType="_FCHHlOuBEe26t6NFWNbtcA" className="com.es.sieFormacion.SolicitudCurso">
         <defaultValue xmi:type="expression:Expression" xmi:id="_uiXqTuuIEe26t6NFWNbtcA" name="initSolicitud()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;&#xD;&#xA;def solicitudCursoVar = new com.es.sieFormacion.SolicitudCurso()&#xD;&#xA;solicitudCursoVar.nombre = solicitudInput?.nombre&#xD;&#xA;solicitudCursoVar.etiqueta = solicitudInput?.etiqueta&#xD;&#xA;solicitudCursoVar.tipo = solicitudInput?.tipo&#xD;&#xA;solicitudCursoVar.precio = solicitudInput?.precio?.toFloat()&#xD;&#xA;solicitudCursoVar.fechaInicio = solicitudInput?.fechaInicio&#xD;&#xA;solicitudCursoVar.descripcion = solicitudInput?.descripcion&#xD;&#xA;solicitudCursoVar.instructor = solicitudInput?.instructor&#xD;&#xA;&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;solicitudCursoVar.solicitanteId = processInitiator.id&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;return solicitudCursoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.es.sieFormacion.SolicitudCurso">
@@ -535,6 +541,13 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0e9ANe53Ee2PIrJQrtmQaA" x="566" y="155"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_UUQLQPJREe2Bxqk2R5UJFQ" type="3015" element="_UUPkMPJREe2Bxqk2R5UJFQ">
+              <children xmi:type="notation:DecorationNode" xmi:id="_UUQLRfJREe2Bxqk2R5UJFQ" type="5010"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_UUQLQfJREe2Bxqk2R5UJFQ"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_UUQLQvJREe2Bxqk2R5UJFQ" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_UUQLQ_JREe2Bxqk2R5UJFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UUQLRPJREe2Bxqk2R5UJFQ" x="86" y="18" width="121" height="73"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_FCHHo-uBEe26t6NFWNbtcA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_FCHHpOuBEe26t6NFWNbtcA" fontName="Segoe UI"/>
@@ -571,12 +584,19 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_om09FeuBEe26t6NFWNbtcA" x="950" y="71"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_RW1X4PJREe2Bxqk2R5UJFQ" type="3015" element="_RW0JwPJREe2Bxqk2R5UJFQ">
+              <children xmi:type="notation:DecorationNode" xmi:id="_RW1X5fJREe2Bxqk2R5UJFQ" type="5010"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_RW1X4fJREe2Bxqk2R5UJFQ"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_RW1X4vJREe2Bxqk2R5UJFQ" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_RW1X4_JREe2Bxqk2R5UJFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RW1X5PJREe2Bxqk2R5UJFQ" x="139" y="240" width="116"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_D_7AQevyEe248OXz2Z0OJg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_D_7AQuvyEe248OXz2Z0OJg" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_D_7AQ-vyEe248OXz2Z0OJg"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_D_7AR-vyEe248OXz2Z0OJg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D_7AROvyEe248OXz2Z0OJg" x="53" y="331" width="1292" height="306"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D_7AROvyEe248OXz2Z0OJg" x="53" y="331" width="1292" height="350"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_ErGrQOvyEe248OXz2Z0OJg" type="3007" element="_ErGEMOvyEe248OXz2Z0OJg">
           <children xmi:type="notation:DecorationNode" xmi:id="_ErGrRevyEe248OXz2Z0OJg" type="5007"/>
@@ -591,12 +611,19 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p6rKleuBEe26t6NFWNbtcA" x="1022" y="100"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_eijLQPJREe2Bxqk2R5UJFQ" type="3015" element="_eih9IPJREe2Bxqk2R5UJFQ">
+              <children xmi:type="notation:DecorationNode" xmi:id="_eijLRfJREe2Bxqk2R5UJFQ" type="5010"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_eijLQfJREe2Bxqk2R5UJFQ"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_eijLQvJREe2Bxqk2R5UJFQ" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_eijLQ_JREe2Bxqk2R5UJFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eijLRPJREe2Bxqk2R5UJFQ" x="338" y="107" width="157" height="119"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_ErGrQevyEe248OXz2Z0OJg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_ErGrQuvyEe248OXz2Z0OJg" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_ErGrQ-vyEe248OXz2Z0OJg"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_ErGrR-vyEe248OXz2Z0OJg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ErGrROvyEe248OXz2Z0OJg" x="53" y="662" width="1292" height="250"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ErGrROvyEe248OXz2Z0OJg" x="53" y="681" width="1292" height="286"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_FCHHqOuBEe26t6NFWNbtcA"/>
@@ -671,6 +698,23 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_onrP4e_aEe2UK930Zeg3uQ" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_onrP4u_aEe2UK930Zeg3uQ" points="[-16, -24, -20, 318]$[-16, -313, -20, 29]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_onrP5e_aEe2UK930Zeg3uQ" id="(1.0,0.8)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_RtBDQPJREe2Bxqk2R5UJFQ" type="4003" element="_RtAcMPJREe2Bxqk2R5UJFQ" source="_RW1X4PJREe2Bxqk2R5UJFQ" target="_FCHHn-uBEe26t6NFWNbtcA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_RtBDQfJREe2Bxqk2R5UJFQ" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RtBDQvJREe2Bxqk2R5UJFQ" points="[-15, -9, 123, 74]$[-123, -83, 15, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RtBqUPJREe2Bxqk2R5UJFQ" id="(1.0,0.18)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_X9FTIfJREe2Bxqk2R5UJFQ" type="4003" element="_X9FTIPJREe2Bxqk2R5UJFQ" source="_UUQLQPJREe2Bxqk2R5UJFQ" target="_FCHHnOuBEe26t6NFWNbtcA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_X9FTIvJREe2Bxqk2R5UJFQ" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X9FTI_JREe2Bxqk2R5UJFQ" points="[-27, 63, 21, -50]$[-48, 113, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X9GhQPJREe2Bxqk2R5UJFQ" id="(1.0,0.136986301369863)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X9GhQfJREe2Bxqk2R5UJFQ" id="(0.8362068965517241,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_hTxVsPJREe2Bxqk2R5UJFQ" type="4003" element="_hTwuoPJREe2Bxqk2R5UJFQ" source="_eijLQPJREe2Bxqk2R5UJFQ" target="_pSl26OuBEe26t6NFWNbtcA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_hTxVsfJREe2Bxqk2R5UJFQ" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hTxVsvJREe2Bxqk2R5UJFQ" points="[0, 8, -167, 0]$[144, 5, -23, -3]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hTx8wPJREe2Bxqk2R5UJFQ" id="(1.0,0.18)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hTx8wfJREe2Bxqk2R5UJFQ" id="(0.21296296296296297,0.4444444444444444)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
